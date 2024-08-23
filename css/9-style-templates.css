@@ -1,0 +1,69 @@
+/* estilos Templates */
+
+.caja-blanca {
+    background-color: rgb(236, 236, 236);
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.caja-blanca > img {
+    max-width: 100%;
+    margin: auto;
+}
+
+.caja-blanca > h3 {
+    color: #000;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 26px;
+    font-family: cursive, monospace, sans-serif;
+    font-weight: 200;
+}
+
+.boton-plantilla {
+    display: inline-block;
+    padding: 10px 0;
+    background-color: rgb(99, 98, 98);
+    width: 35%;
+    margin: 20px 5px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.boton-plantilla:hover {
+    background-color: #04aa6d;
+}
+
+@media only screen and (max-width: 1400px) {
+    .boton-plantilla {
+        display: inline-block;
+        padding: 10px 0;
+        background-color: rgb(99, 98, 98);
+        width: 100%;
+        margin: 20px 10px;
+        text-align: center;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    .caja-blanca > img {
+        max-width: 100%;
+        margin: auto;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .caja-blanca > img {
+        max-width: 100%;
+        margin: auto;
+        padding: 0 10px;
+    }
+}
+
+.enlace-plantilla {
+    display: flex;
+    justify-content: center;
+}

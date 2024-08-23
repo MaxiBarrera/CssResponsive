@@ -1,0 +1,18 @@
+.cuadro-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.img-meta img {
+    padding: 20px 75px;
+}
+
+.img-meta a {
+    display: block;
+    color: #fff;
+}
+
+.img-meta a:hover {
+    color: green;
+}

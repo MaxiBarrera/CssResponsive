@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/img/Horda.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/1-style-generales.css" />
+        <link rel="stylesheet" href="/css/5-style-mediaQueries.css" />
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+        <title>Media Queries</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aside-oculto">
+                <i class="fa-solid fa-bars"></i>
+
+                <div class="botones-ocultos">
+                    <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                    <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                    <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                    <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Grid View</a>
+
+                    <a style="background-color: #04aa6d" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Media Queries</a>
+
+                    <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                    <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                    <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                    <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+                </div>
+            </aside>
+
+            <aside class="aside-izquierda">
+                <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Grid View</a>
+
+                <a style="background-color: #04aa6d" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Media Queries</a>
+
+                <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+            </aside>
+
+            <aside class="aside-derecha">
+                <h1 class="titulo">Diseño web responsivo : consultas de medios</h1>
+
+                <hr />
+
+                <h2>¿Qué es una Media Query?</h2>
+
+                <p>La consulta de medios es una técnica CSS introducida en CSS3.</p>
+
+                <p>Utiliza la regla <span class="rojo">@media</span> para incluir un bloque de propiedades CSS solo si se cumple una determinada condición.</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <p>Si la ventana del navegador tiene 600 px o menos, el color de fondo será azul claro:</p>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">@media only screen and (max-width: 600px)</span> {
+  <span class="rojo">body</span> {
+    <span class="purpura">background-color</span>: <span class="verde">lightblue</span>;
+  }
+}                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Agregar un punto de interrupción</h2>
+
+                <p>Anteriormente en este tutorial creamos una página web con filas y columnas, y era responsiva, pero no se veía bien en una pantalla pequeña.</p>
+
+                <p>Las consultas de medios pueden ayudar con eso. Podemos agregar un punto de interrupción donde ciertas partes del diseño se comportarán de manera diferente en cada lado del punto de interrupción.</p>
+
+                <div class="contenedor-imagenes">
+                    <div class="pantallas">
+                        <img src="/img/escritorio.png" alt="pantalla de escritorio" title="Pantalla de escritorio" />
+                        <p>Escritorio</p>
+                    </div>
+
+                    <div class="pantallas">
+                        <img src="/img/telefono.png" alt="pantalla de teléfono" title="Pantalla de Telefóno" />
+                        <p>Teléfono</p>
+                    </div>
+                </div>
+
+                <p>Utilice una consulta de medios para agregar un punto de interrupción en 768 px:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <p>Cuando la pantalla (ventana del navegador) es más pequeña que 768 px, cada columna debe tener un ancho del 100 %:</p>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span style="color: #999;">/* For desktop: */</span>
+<span class="rojo">.col-1</span> {<span class="purpura">width</span>: <span class="verde">8.33%</span>;}
+<span class="rojo">.col-2</span> {<span class="purpura">width</span>: <span class="verde">16.66%</span>;}
+<span class="rojo">.col-3</span> {<span class="purpura">width</span>: <span class="verde">25%</span>;}
+<span class="rojo">.col-4</span> {<span class="purpura">width</span>: <span class="verde">33.33%</span>;}
+<span class="rojo">.col-5</span> {<span class="purpura">width</span>: <span class="verde">41.66%</span>;}
+<span class="rojo">.col-6</span> {<span class="purpura">width</span>: <span class="verde">50%</span>;}
+<span class="rojo">.col-7</span> {<span class="purpura">width</span>: <span class="verde">58.33%</span>;}
+<span class="rojo">.col-8</span> {<span class="purpura">width</span>: <span class="verde">66.66%</span>;}
+<span class="rojo">.col-9</span> {<span class="purpura">width</span>: <span class="verde">75%</span>;}
+<span class="rojo">.col-10</span> {<span class="purpura">width</span>: <span class="verde">83.33%</span>;}
+<span class="rojo">.col-11</span> {<span class="purpura">width</span>: <span class="verde">91.66%</span>;}
+<span class="rojo">.col-12</span> {<span class="purpura">width</span>: <span class="verde">100%</span>;}
+
+<span class="rojo">@media only screen and (max-width: 768px)</span> {
+  <span style="color: #999;">/* For mobile phones: */</span>
+  <span class="rojo">[class*="col-"]</span> {
+    <span class="purpura">width</span>: <span class="verde">100%</span>;
+  }
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_breakpoints" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Diseñe siempre para dispositivos móviles primero</h2>
+
+                <p>Mobile First significa diseñar para dispositivos móviles antes de diseñar para computadoras de escritorio o cualquier otro dispositivo (esto hará que la página se muestre más rápido en dispositivos más pequeños).</p>
+
+                <p>Esto significa que debemos realizar algunos cambios en nuestro CSS.</p>
+
+                <p>En lugar de cambiar los estilos cuando el ancho es menor a 768 px, deberíamos cambiar el diseño cuando el ancho es mayor a 768 px. Esto hará que nuestro diseño sea Mobile First:</p>
+
+                <div class="cuadro-ej">
+                    <h2>Ejemplo</h2>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span style="color: #999;">/* For mobile phones: */</span>
+<span class="rojo">[class*="col-"]</span> {
+    <span class="purpura">width</span>: <span class="verde">100%</span>;
+}
+
+<span class="rojo">@media only screen and (min-width: 768px)</span> {
+  <span style="color: #999;">/* For desktop: */</span>
+  <span class="rojo">.col-1</span> {<span class="purpura">width</span>: <span class="verde">8.33%</span>;}
+  <span class="rojo">.col-2</span> {<span class="purpura">width</span>: <span class="verde">16.66%</span>;}
+  <span class="rojo">.col-3</span> {<span class="purpura">width</span>: <span class="verde">25%</span>;}
+  <span class="rojo">.col-4</span> {<span class="purpura">width</span>: <span class="verde">33.33%</span>;}
+  <span class="rojo">.col-5</span> {<span class="purpura">width</span>: <span class="verde">41.66%</span>;}
+  <span class="rojo">.col-6</span> {<span class="purpura">width</span>: <span class="verde">50%</span>;}
+  <span class="rojo">.col-7</span> {<span class="purpura">width</span>: <span class="verde">58.33%</span>;}
+  <span class="rojo">.col-8</span> {<span class="purpura">width</span>: <span class="verde">66.66%</span>;}
+  <span class="rojo">.col-9</span> {<span class="purpura">width</span>: <span class="verde">75%</span>;}
+  <span class="rojo">.col-10</span> {<span class="purpura">width</span>: <span class="verde">83.33%</span>;}
+  <span class="rojo">.col-11</span> {<span class="purpura">width</span>: <span class="verde">91.66%</span>;}
+  <span class="rojo">.col-12</span> {<span class="purpura">width</span>: <span class="verde">100%</span>;}
+}                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mobilefirst" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Otro punto de quiebre</h2>
+
+                <p>Puedes agregar tantos puntos de interrupción como desees.</p>
+
+                <p>También insertaremos un punto de ruptura entre tabletas y teléfonos móviles.</p>
+
+                <div class="contenedor-imagenes">
+                    <div class="pantallas">
+                        <img src="/img/escritorio.png" alt="pantalla de escritorio" title="Pantalla de escritorio" />
+                        <p>Escritorio</p>
+                    </div>
+
+                    <div class="pantallas">
+                        <img src="/img/tableta.png" alt="pantalla tableta" title="Pantalla tableta" />
+                        <p>Escritorio</p>
+                    </div>
+
+                    <div class="pantallas">
+                        <img src="/img/telefono.png" alt="pantalla de teléfono" title="Pantalla de Telefóno" />
+                        <p>Teléfono</p>
+                    </div>
+                </div>
+
+                <p>Para ello, agregamos una consulta de medios más (de 600 px) y un conjunto de nuevas clases para dispositivos de más de 600 px (pero más pequeños que 768 px):</p>
+
+                <div class="cuadro-ej">
+                    <h2>Ejemplo</h2>
+
+                    <p>Tenga en cuenta que los dos conjuntos de clases son casi idénticos, la única diferencia es el nombre ( <span class="rojo">col-</span> y <span class="rojo">col-s-</span>):</p>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span style="color: #999;">/* For mobile phones: */</span>
+<span class="rojo">[class*="col-"]</span> {
+    <span class="purpura">width</span>: <span class="verde">100%</span>;
+}
+
+<span class="rojo"> @media only screen and (min-width: 600px)</span> {
+  <span style="color: #999;">/* For tablets: */</span>
+  <span class="rojo">.col-s-1</span> {<span class="purpura">width</span>: <span class="verde">8.33%</span>;}
+  <span class="rojo">.col-s-2</span> {<span class="purpura">width</span>: <span class="verde">16.66%</span>;}
+  <span class="rojo">.col-s-3</span> {<span class="purpura">width</span>: <span class="verde">25%</span>;}
+  <span class="rojo">.col-s-4</span> {<span class="purpura">width</span>: <span class="verde">33.33%</span>;}
+  <span class="rojo">.col-s-5</span> {<span class="purpura">width</span>: <span class="verde">41.66%</span>;}
+  <span class="rojo">.col-s-6</span> {<span class="purpura">width</span>: <span class="verde">50%</span>;}
+  <span class="rojo">.col-s-7</span> {<span class="purpura">width</span>: <span class="verde">58.33%</span>;}
+  <span class="rojo">.col-s-8</span> {<span class="purpura">width</span>: <span class="verde">66.66%</span>;}
+  <span class="rojo">.col-s-9</span> {<span class="purpura">width</span>: <span class="verde">75%</span>;}
+  <span class="rojo">.col-s-10</span> {<span class="purpura">width</span>: <span class="verde">83.33%</span>;}
+  <span class="rojo">.col-s-11</span> {<span class="purpura">width</span>: <span class="verde">91.66%</span>;}
+  <span class="rojo">.col-s-12</span> {<span class="purpura">width</span>: <span class="verde">100%</span>;}
+}                            
+
+
+<span class="rojo"> @media only screen and (min-width: 768px)</span> {
+  <span style="color: #999;">/* For desktop: */</span>
+  <span class="rojo">.col-1</span> {<span class="purpura">width</span>: <span class="verde">8.33%</span>;}
+  <span class="rojo">.col-2</span> {<span class="purpura">width</span>: <span class="verde">16.66%</span>;}
+  <span class="rojo">.col-3</span> {<span class="purpura">width</span>: <span class="verde">25%</span>;}
+  <span class="rojo">.col-4</span> {<span class="purpura">width</span>: <span class="verde">33.33%</span>;}
+  <span class="rojo">.col-5</span> {<span class="purpura">width</span>: <span class="verde">41.66%</span>;}
+  <span class="rojo">.col-6</span> {<span class="purpura">width</span>: <span class="verde">50%</span>;}
+  <span class="rojo">.col-7</span> {<span class="purpura">width</span>: <span class="verde">58.33%</span>;}
+  <span class="rojo">.col-8</span> {<span class="purpura">width</span>: <span class="verde">66.66%</span>;}
+  <span class="rojo">.col-9</span> {<span class="purpura">width</span>: <span class="verde">75%</span>;}
+  <span class="rojo">.col-10</span> {<span class="purpura">width</span>: <span class="verde">83.33%</span>;}
+  <span class="rojo">.col-11</span> {<span class="purpura">width</span>: <span class="verde">91.66%</span>;}
+  <span class="rojo">.col-12</span> {<span class="purpura">width</span>: <span class="verde">100%</span>;}
+}                                                
+                        </pre>
+                    </div>
+                </div>
+
+                <p>Puede parecer extraño que tengamos dos conjuntos de clases idénticas, pero nos da la oportunidad en HTML de decidir qué sucederá con las columnas en cada punto de interrupción:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo de HTML</h3>
+
+                    <h4>Para escritorio:</h4>
+
+                    <p>La primera y la tercera sección ocuparán 3 columnas cada una. La sección del medio ocupará 6 columnas.</p>
+
+                    <h4>Para tabletas:</h4>
+
+                    <p>La primera sección abarcará 3 columnas, la segunda abarcará 9 y la tercera sección se mostrará debajo de las dos primeras secciones y abarcará 12 columnas:</p>
+
+                    <div class="fondo-ej">
+                        <pre>
+&lt;<span class="rojo">div</span> <span class="purpura">class</span>=<span class="verde">"row"</span>&gt;
+  &lt;<span class="rojo">div</span> <span class="purpura">class</span>=<span class="verde">"col-3 col-s-3"</span>&gt;...&lt;<span class="rojo">/div</span>&gt;
+  &lt;<span class="rojo">div</span> <span class="purpura">class</span>=<span class="verde">"col-6 col-s-9"</span>&gt;...&lt;<span class="rojo">/div</span>&gt;
+  &lt;<span class="rojo">div</span> <span class="purpura">class</span>=<span class="verde">"col-3 col-s-12"</span>&gt;...&lt;<span class="rojo">/div</span>&gt;
+&lt;<span class="rojo">/div</span>&gt;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_col-s" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Puntos de interrupción típicos del dispositivo</h2>
+
+                <p>Hay muchas pantallas y dispositivos con diferentes alturas y anchos, por lo que es difícil crear un punto de interrupción exacto para cada dispositivo. Para simplificar las cosas, puede centrarse en cinco grupos:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span style="color: #999;">/* Extra small devices (phones, 600px and down) */</span>
+<span class="rojo">@media only screen and (max-width: 600px)</span> {...}
+
+<span style="color: #999;">/* Small devices (portrait tablets and large phones, 600px and up) */</span>
+<span class="rojo">@media only screen and (min-width: 600px)</span> {...}
+
+<span style="color: #999;">/* Medium devices (landscape tablets, 768px and up) */</span>
+<span class="rojo">@media only screen and (min-width: 768px)</span> {...}
+
+<span style="color: #999;">/* Large devices (laptops/desktops, 992px and up) */</span>
+<span class="rojo">@media only screen and (min-width: 992px)</span> {...}
+
+<span style="color: #999;">/* Extra large devices (large laptops and desktops, 1200px and up) */</span>
+<span class="rojo">@media only screen and (min-width: 1200px)</span> {...}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_breakpoints" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Orientación: Vertical / Horizontal</h2>
+
+                <p>Las consultas de medios también se pueden utilizar para cambiar el diseño de una página dependiendo de la orientación del navegador.</p>
+
+                <p>Puede tener un conjunto de propiedades CSS que solo se aplicarán cuando la ventana del navegador sea más ancha que su altura, una orientación denominada "horizontal":</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <p>La página web tendrá un fondo azul claro si la orientación es en modo horizontal:</p>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">@media only screen and (orientation: landscape)</span> {
+  <span class="rojo">body</span> {
+    <span class="purpura">background-color</span>: <span class="verde">lightblue</span>;
+  }
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_mediaquery_orientation2" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Ocultar elementos con consultas de medios</h2>
+
+                <p>Otro uso común de las consultas de medios es ocultar elementos en diferentes tamaños de pantalla:</p>
+
+                <p class="p-oculto">Estaré oculto en pantallas pequeñas.</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span style="color: #999;">/* If the screen size is 600px wide or less, hide the element */</span>
+<span class="rojo">@media only screen and (max-width: 600px)</span> {
+  <span class="rojo">div.example</span> {
+    <span class="purpura">display</span>: <span class="verde">none</span>;
+  }
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_hide2" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Cambiar el tamaño de fuente con consultas de medios</h2>
+
+                <p>También puedes utilizar consultas de medios para cambiar el tamaño de fuente de un elemento en diferentes tamaños de pantalla:</p>
+
+                <p class="p-variable">Tamaño de fuente variable.</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span style="color: #999;">/* If the screen size is 601px or more, set the font-size of &lt;div&gt; to 80px */</span>
+<span class="rojo">@media only screen and (min-width: 601px)</span> {
+  <span class="rojo">div.example</span> {
+    <span class="purpura">font-size</span>: <span class="verde">80px</span>;
+  }
+}
+
+<span style="color: #999;">/* If the screen size is 600px or less, set the font-size of &lt;div&gt; to 30px */</span>
+<span class="rojo">@media only screen and (max-width: 600px)</span> {
+  <span class="rojo">div.example</span> {
+    <span class="purpura">font-size</span>: <span class="verde">30px</span>;
+  }
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_mediaqueries_fontsize2" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Referencia CSS @media</h2>
+
+                <p>Para obtener una descripción general completa de todos los tipos de medios y características/expresiones, consulte la <a class="enlace-normal" href="https://www.w3schools.com/cssref/css3_pr_mediaquery.php">regla @media en nuestra referencia CSS</a>.</p>
+
+                <a href="/html/3-gridview.html" class="boton-previous"><i class="fa-solid fa-chevron-left"></i> Anterior</a>
+
+                <a href="/html/5-images.html" class="boton-next">Próximo <i class="fa-solid fa-chevron-right"></i></a>
+            </aside>
+        </main>
+    </body>
+</html>

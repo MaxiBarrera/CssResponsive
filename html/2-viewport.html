@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/img/Horda.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/1-style-generales.css" />
+        <link rel="stylesheet" href="/css/3-style-viewport.css" />
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+        <title>Viewport</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aside-oculto">
+                <i class="fa-solid fa-bars"></i>
+
+                <div class="botones-ocultos">
+                    <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                    <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                    <a style="background-color: #04aa6d" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Viewport</a>
+
+                    <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Grid View</a>
+
+                    <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                    <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                    <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                    <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                    <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+                </div>
+            </aside>
+
+            <aside class="aside-izquierda">
+                <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                <a style="background-color: #04aa6d" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Viewport</a>
+
+                <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Grid View</a>
+
+                <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+            </aside>
+
+            <aside class="aside-derecha">
+                <h1 class="titulo">Diseño web adaptable: la ventana gráfica</h1>
+
+                <hr />
+
+                <h2>¿Qué es la ventana gráfica?</h2>
+
+                <p>La ventana gráfica es el área visible para el usuario de una página web.</p>
+
+                <p>La ventana gráfica varía según el dispositivo y será más pequeña en un teléfono móvil que en la pantalla de una computadora.</p>
+
+                <p>Antes de las tabletas y los teléfonos móviles, las páginas web se diseñaban únicamente para pantallas de ordenador, y era común que las páginas web tuvieran un diseño estático y un tamaño fijo.</p>
+
+                <p>Luego, cuando empezamos a navegar por Internet mediante tabletas y teléfonos móviles, las páginas web de tamaño fijo eran demasiado grandes para caber en la ventana gráfica. Para solucionar este problema, los navegadores de esos dispositivos redujeron la página web completa para que se ajustara a la pantalla.</p>
+
+                <p>¡¡Esto no fue perfecto!! Pero una solución rápida.</p>
+
+                <hr />
+
+                <h2>Configuración de la ventana gráfica</h2>
+
+                <p>HTML5 introdujo un método para permitir a los diseñadores web tomar control sobre la ventana gráfica a través de la etiqueta <code class="rojo">&lt;meta&gt;</code>.</p>
+
+                <p>Debe incluir el siguiente elemento <code class="rojo">&lt;meta&gt;</code> de ventana gráfica en todas sus páginas web:</p>
+
+                <p class="fondo-cuadro verde">&lt;<spam class="rojo">meta</spam> <spam class="purpura">name</spam> ="viewport"<spam class="purpura">content</spam> ="width=device-width, initial-scale=1.0"&gt;</p>
+
+                <p>Esto le da al navegador instrucciones sobre cómo controlar las dimensiones y la escala de la página.</p>
+
+                <p>La parte <spam class="rojo">width=device-width</spam> establece el ancho de la página para seguir el ancho de la pantalla del dispositivo (que variará según el dispositivo).</p>
+
+                <p>La parte <spam class="rojo">initial-scale=1.0</spam> establece el nivel de zoom inicial cuando el navegador carga la página por primera vez.</p>
+
+                <p>A continuación se muestra un ejemplo de una página web sin la metaetiqueta de ventana gráfica y la misma página web con la metaetiqueta de ventana gráfica:</p>
+
+                <div class="cuadro-meta">
+                    <div class="img-meta">
+                        <img src="/img/ej-cel.png" alt="Ejemplo sin meta etiqueta" />
+                        <a href="https://www.w3schools.com/css/example_withoutviewport.htm" target="_blank">Sin la metaetiqueta de la ventana gráfica</a>
+                    </div>
+
+                    <div class="img-meta">
+                        <img src="/img/ej-pc.png" alt="ejemplo con meta etiqueta" />
+                        <a href="https://www.w3schools.com/css/example_withviewport.htm" target="_blank">Con la metaetiqueta de ventana gráfica</a>
+                    </div>
+                </div>
+
+                <p class="fondo-consejo"><strong>Consejo:</strong> si estás navegando por esta página con un teléfono o una tableta, puedes hacer clic en los dos enlaces de arriba para ver la diferencia.</p>
+
+                <hr />
+
+                <h2>Tamaño del contenido a la ventana gráfica</h2>
+
+                <p>Los usuarios están acostumbrados a desplazarse por los sitios web verticalmente tanto en dispositivos móviles como de escritorio, ¡pero no horizontalmente!</p>
+
+                <p>Por lo tanto, si el usuario se ve obligado a desplazarse horizontalmente o alejarse para ver toda la página web, la experiencia del usuario será deficiente.</p>
+
+                <p>Algunas reglas adicionales a seguir:</p>
+
+                <ol style="margin-left: 20px">
+                    <li>NO utilice elementos grandes de ancho fijo: por ejemplo, si una imagen se muestra con un ancho mayor que la ventana gráfica, puede hacer que la ventana gráfica se desplace horizontalmente. Recuerde ajustar este contenido para que quepa dentro del ancho de la ventana gráfica.</li>
+
+                    <br />
+
+                    <li>NO permita que el contenido dependa de un ancho de ventana gráfica particular para renderizarse bien : dado que las dimensiones de la pantalla y el ancho en píxeles CSS varían ampliamente entre dispositivos, el contenido no debe depender de un ancho de ventana gráfica particular para renderizarse bien.</li>
+
+                    <br />
+
+                    <li>Utilice consultas de medios CSS para aplicar diferentes estilos a pantallas pequeñas y grandes : establecer anchos CSS absolutos grandes para elementos de página hará que el elemento sea demasiado ancho para la ventana gráfica en un dispositivo más pequeño. En su lugar, considere utilizar valores de ancho relativo, como ancho: 100%. Además, tenga cuidado al utilizar valores de posicionamiento absoluto grandes. Puede hacer que el elemento caiga fuera de la ventana gráfica en dispositivos pequeños.</li>
+                </ol>
+
+                <a href="../index.html" class="boton-previous"><i class="fa-solid fa-chevron-left"></i>Anterior</a>
+
+                <a href="/html/3-gridview.html" class="boton-next">Próximo<i class="fa-solid fa-chevron-right"></i></a>
+            </aside>
+        </main>
+    </body>
+</html>

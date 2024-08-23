@@ -1,0 +1,23 @@
+/* estilos videos */
+
+.caja-video {
+    display: flex;
+    justify-content: center;
+}
+
+.snoop {
+    width: 35%;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+    .snoop {
+        width: 80%;
+        height: auto;
+    }
+}
+
+.snoop1 {
+    max-width: 100%;
+    height: auto;
+}

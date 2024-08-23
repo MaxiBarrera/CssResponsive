@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/img/Horda.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/1-style-generales.css" />
+        <link rel="stylesheet" href="/css/7-style-videos.css" />
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+        <title>Diseño web responsivo - Vídeos</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aside-oculto">
+                <i class="fa-solid fa-bars"></i>
+
+                <div class="botones-ocultos">
+                    <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                    <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                    <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                    <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Grid View</a>
+
+                    <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                    <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                    <a style="background-color: #04aa6d" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Videos</a>
+
+                    <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                    <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+                </div>
+            </aside>
+
+            <aside class="aside-izquierda">
+                <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Grid View</a>
+
+                <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                <a style="background-color: #04aa6d" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Videos</a>
+
+                <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+            </aside>
+
+            <aside class="aside-derecha">
+                <h1 class="titulo">Diseño web responsivo - Vídeos</h1>
+
+                <hr />
+
+                <h2>Uso de la propiedad de ancho</h2>
+
+                <p>Si la propiedad <span class="rojo">width</span> se establece al 100 %, el reproductor de video responderá y podrá ampliar o reducir su tamaño:</p>
+
+                <div class="caja-video">
+                    <video class="snoop" src="/video/snoopdog.mp4" controls></video>
+                </div>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">video</span> {
+  <span class="purpura">width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">auto</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_video2" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <p>Tenga en cuenta que en el ejemplo anterior, el reproductor de video se puede ampliar para que sea más grande que su tamaño original. En muchos casos, una mejor solución será utilizar la propiedad <span class="rojo">max-width</span> en su lugar.</p>
+
+                <hr />
+
+                <h2>Uso de la propiedad max-width</h2>
+
+                <p>Si la propiedad <span class="rojo">max-width</span> se establece al 100 %, el reproductor de video se reducirá si es necesario, pero nunca aumentará su tamaño hasta alcanzar un tamaño mayor que su tamaño original:</p>
+
+                <div class="caja-video">
+                    <video class="snoop1" src="/video/snoopdog.mp4" controls></video>
+                </div>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">video</span> {
+  <span class="purpura">max-width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">auto</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_video" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Agregar un vídeo a la página web de ejemplo</h2>
+
+                <p>Queremos añadir un vídeo a nuestra página web de ejemplo. El vídeo se redimensionará para que ocupe siempre todo el espacio disponible:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">video</span> {
+  <span class="purpura">width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">auto</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_video3" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <a href="/html/5-images.html" class="boton-previous"><i class="fa-solid fa-chevron-left"></i> Anterior</a>
+
+                <a href="/html/7-frameworks.html" class="boton-next">Próximo <i class="fa-solid fa-chevron-right"></i></a>
+            </aside>
+        </main>
+    </body>
+</html>

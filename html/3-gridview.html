@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/img/Horda.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/1-style-generales.css" />
+        <link rel="stylesheet" href="/css/4-style-gridview.css" />
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+        <title>Grid View</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aside-oculto">
+                <i class="fa-solid fa-bars"></i>
+
+                <div class="botones-ocultos">
+                    <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                    <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                    <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                    <a style="background-color: #04aa6d" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Grid View</a>
+
+                    <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                    <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                    <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                    <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                    <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+                </div>
+            </aside>
+
+            <aside class="aside-izquierda">
+                <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                <a style="background-color: #04aa6d" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Grid View</a>
+
+                <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                <a class="a-hover" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Images</a>
+
+                <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+            </aside>
+
+            <aside class="aside-derecha">
+                <h1 class="titulo">Diseño web responsivo: vista de cuadrícula</h1>
+
+                <hr />
+
+                <h2>¿Qué es una vista de cuadrícula?</h2>
+
+                <p>Muchas páginas web se basan en una vista de cuadrícula, lo que significa que la página está dividida en columnas:</p>
+
+                <div class="contenedor-cuadricula">
+                    <div class="col-1"></div>
+                    <div class="col-2"></div>
+                    <div class="col-3"></div>
+                    <div class="col-4"></div>
+                    <div class="col-5"></div>
+                    <div class="col-6"></div>
+                    <div class="col-7"></div>
+                    <div class="col-8"></div>
+                    <div class="col-9"></div>
+                    <div class="col-10"></div>
+                    <div class="col-11"></div>
+                    <div class="col-12"></div>
+                </div>
+
+                <hr />
+
+                <p>Usar una vista de cuadrícula es muy útil al diseñar páginas web. Facilita la colocación de elementos en la página.</p>
+
+                <p>Una vista de cuadrícula receptiva a menudo tiene 12 columnas y un ancho total del 100%, y se reducirá y expandirá a medida que cambie el tamaño de la ventana del navegador.</p>
+
+                <a href="https://www.w3schools.com/css/tryresponsive_grid.htm" target="_blank" class="boton-vinculo">Ejemplo: Vista de cuadricula respinsiva</a>
+
+                <hr />
+
+                <h2>Construyendo una vista de cuadrícula responsiva</h2>
+
+                <p>Comencemos a construir una vista de cuadrícula receptiva.</p>
+
+                <p>Primero asegúrese de que todos los elementos HTML tengan la propiedad <span class="rojo">box-sizing</span> establecida en <span class="rojo">border-box</span>. Esto asegura que el relleno y el borde estén incluidos en el ancho y alto total de los elementos.</p>
+
+                <p>Agregue el siguiente código en su CSS:</p>
+
+                <pre class="fondo-cuadro">
+<span class="rojo">*</span> {
+  <span class="purpura">box-sizing</span>: <span class="verde">border-box</span>;
+}              
+                </pre>
+
+                <p>El siguiente ejemplo muestra una página web responsiva simple, con dos columnas:</p>
+
+                <div class="caja-colSimple">
+                    <div class="chica">25%</div>
+                    <div class="grande">75%</div>
+                </div>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">.menu</span> {
+    <span class="purpura">width</span>: <span class="verde">25%</span>;
+    <span class="purpura">float</span>: <span class="verde">left</span>;
+}
+<span class="rojo">.main</span> {
+    <span class="purpura">width</span>: <span class="verde">75%</span>;
+    <span class="purpura">float</span>: <span class="verde">left</span>;
+}                        
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_webpage" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <p>El ejemplo anterior está bien si la página web solo contiene dos columnas.</p>
+
+                <p>Sin embargo, queremos utilizar una vista de cuadrícula adaptable con 12 columnas, para tener más control sobre la página web.</p>
+
+                <p>Primero debemos calcular el porcentaje para una columna: 100% / 12 columnas = 8,33%.</p>
+
+                <p>Luego creamos una clase para cada una de las 12 columnas <span class="rojo">class="col-"</span> y un número que define cuántas columnas debe abarcar la sección:</p>
+
+                <div class="cuadro-ej">
+                    <h2>Código CSS:</h2>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">.col-1</span> {<span class="purpura">width</span>: <span class="verde"> 8.33%</span>;}
+<span class="rojo">.col-2</span> {<span class="purpura">width</span>: <span class="verde"> 16.66%</span>;}
+<span class="rojo">.col-3</span> {<span class="purpura">width</span>: <span class="verde"> 25%</span>;}
+<span class="rojo">.col-4</span> {<span class="purpura">width</span>: <span class="verde"> 33.33%</span>;}
+<span class="rojo">.col-5</span> {<span class="purpura">width</span>: <span class="verde"> 41.66%</span>;}
+<span class="rojo">.col-6</span> {<span class="purpura">width</span>: <span class="verde"> 50%</span>;}
+<span class="rojo">.col-7</span> {<span class="purpura">width</span>: <span class="verde"> 58.33%</span>;}
+<span class="rojo">.col-8</span> {<span class="purpura">width</span>: <span class="verde"> 66.66%</span>;}
+<span class="rojo">.col-9</span> {<span class="purpura">width</span>: <span class="verde"> 75%</span>;}
+<span class="rojo">.col-10</span> {<span class="purpura">width</span>: <span class="verde">83.33%</span>;}
+<span class="rojo">.col-11</span> {<span class="purpura">width</span>: <span class="verde">91.66%</span>;}
+<span class="rojo">.col-12</span> {<span class="purpura">width</span>: <span class="verde">100%</span>;}                              
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_cols" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <p>Todas estas columnas deben flotar hacia la izquierda y tener un relleno de 15 px:</p>
+
+                <div class="cuadro-ej">
+                    <h2>Código CSS:</h2>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">[class*="col-"]  </span> {
+  <span class="purpura">float  </span>: <span class="verde">left</span>;
+  <span class="purpura">padding</span>: <span class="verde">15px</span>;
+  <span class="purpura">border </span>: <span class="verde">1px solid red</span>;
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <p>Cada fila debe estar envuelta en un <span class="rojo">&lt;div&gt;</span>. La cantidad de columnas dentro de una fila siempre debe sumar 12:</p>
+
+                <div class="cuadro-ej">
+                    <h2>HTML:</h2>
+
+                    <div class="fondo-ej">
+                        <pre>
+&lt;<span class="rojo">div</span> <span class="purpura">class</span>=<span class="verde">"row"</span>&gt;
+  &lt;<span class="rojo">div</span> <span class="purpura">class</span>=<span class="verde">"col-3"</span>&gt;...&lt;<span class="rojo">/div</span>&gt; &lt;!-- 25% --&gt; 
+  &lt;<span class="rojo">div</span> <span class="purpura">class</span>=<span class="verde">"col-9"</span>&gt;...&lt;<span class="rojo">/div</span>&gt; &lt;!-- 75% --&gt;
+&lt;<span class="rojo">/div</span>&gt;                            
+                        </pre>
+                    </div>
+                </div>
+
+                <p>Las columnas dentro de una fila flotan hacia la izquierda y, por lo tanto, quedan fuera del flujo de la página y los demás elementos se colocarán como si las columnas no existieran. Para evitarlo, agregaremos un estilo que borre el flujo:</p>
+
+                <div class="cuadro-ej">
+                    <h2>Código CSS:</h2>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">.row::after</span> {
+  <span class="purpura">content</span>: <span class="verde">""</span>;
+  <span class="purpura">clear</span>: <span class="verde">both</span>;
+  <span class="purpura">display</span>: <span class="verde">table</span>;
+}                            
+                        </pre>
+                    </div>
+                </div>
+
+                <p>También queremos agregar algunos estilos y colores para que se vea mejor:</p>
+
+                <div class="cuadro-ej">
+                    <h2>Ejemplo</h2>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">html</span> {
+  <span class="purpura">font-family</span>: <span class="verde">"Lucida Sans", sans-serif</span>;
+}
+
+<span class="rojo">.header</span> {
+  <span class="purpura">background-color</span>: <span class="verde">#9933cc</span>;
+  <span class="purpura">color</span>: <span class="verde">#ffffff</span>;
+  <span class="purpura">padding</span>: <span class="verde">15px</span>;
+}
+
+<span class="rojo">.menu ul</span> {
+  <span class="purpura">list-style-type</span>: <span class="verde">none</span>;
+  <span class="purpura">margin</span>: <span class="verde">0</span>;
+  <span class="purpura">padding</span>: <span class="verde">0</span>;
+}
+
+<span class="rojo">.menu li</span> {
+  <span class="purpura">padding</span>: <span class="verde">8px</span>;
+  <span class="purpura">margin-bottom</span>: <span class="verde">7px</span>;
+  <span class="purpura">background-color</span> :<span class="verde">#33b5e5</span>;
+  <span class="purpura">color</span>: #ffffff;
+  <span class="purpura">box-shadow</span>: <span class="verde">0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)</span>;
+}
+
+<span class="rojo">.menu li:hover</span> {
+  <span class="purpura">background-color</span>: <span class="verde">#0099cc</span>;
+}                            
+                        </pre>
+                    </div>
+
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_styles" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <p class="fondo-consejo"><strong>Tenga en cuenta</strong> que la página web del ejemplo no se ve bien cuando cambia el tamaño de la ventana del navegador a un ancho muy pequeño. En el próximo capítulo aprenderá cómo solucionarlo.</p>
+
+                <a href="/html/2-viewport.html" class="boton-previous"><i class="fa-solid fa-chevron-left"></i> Anterior</a>
+
+                <a href="/html/4-mediaQueries.html" class="boton-next">Próximo <i class="fa-solid fa-chevron-right"></i></a>
+            </aside>
+        </main>
+    </body>
+</html>

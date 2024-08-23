@@ -1,0 +1,45 @@
+/* estilos rwd-mediaQueries */
+
+.contenedor-imagenes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.pantallas {
+    display: inline-block;
+    margin: 10px;
+}
+
+.pantallas p {
+    text-align: center;
+    margin: -5px;
+}
+
+.p-oculto {
+    background-color: #ffeb3b;
+    color: #000;
+    padding: 5px 15px;
+}
+
+@media only screen and (max-width: 900px) {
+    .p-oculto {
+        display: none;
+    }
+}
+
+.p-variable {
+    background-color: #fff;
+    color: #000;
+    padding: 25px 15px;
+    font-size: 36px;
+}
+
+@media only screen and (max-width: 900px) {
+    .p-variable {
+        background-color: #fff;
+        color: #000;
+        padding: 25px 15px;
+        font-size: 18px;
+    }
+}

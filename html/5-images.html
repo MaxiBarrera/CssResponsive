@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/img/Horda.png" type="image/x-icon" />
+        <link rel="stylesheet" href="/css/1-style-generales.css" />
+        <link rel="stylesheet" href="/css/6-style-images.css" />
+        <script src="https://kit.fontawesome.com/070ba92e19.js" crossorigin="anonymous"></script>
+        <title>Images</title>
+    </head>
+
+    <body>
+        <main>
+            <aside class="aside-oculto">
+                <i class="fa-solid fa-bars"></i>
+
+                <div class="botones-ocultos">
+                    <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                    <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                    <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                    <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Grid View</a>
+
+                    <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                    <a style="background-color: #04aa6d" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Images</a>
+
+                    <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                    <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                    <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+                </div>
+            </aside>
+
+            <aside class="aside-izquierda">
+                <h3 style="margin-bottom: 20px; padding-left: 15px">Responsivo CSS</h3>
+
+                <a class="a-hover" href="../index.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Intro</a>
+
+                <a class="a-hover" href="/html/2-viewport.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"> </i>RWD Viewport</a>
+
+                <a class="a-hover" href="/html/3-gridview.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Grid View</a>
+
+                <a class="a-hover" href="/html/4-mediaQueries.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Media Queries</a>
+
+                <a style="background-color: #04aa6d" href="/html/5-images.html"><i class="fa-sharp fa-solid fa-circle" style="color: #fff; margin: 0 10px"></i>RWD Images</a>
+
+                <a class="a-hover" href="/html/6-videos.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Videos</a>
+
+                <a class="a-hover" href="/html/7-frameworks.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Frameworks</a>
+
+                <a class="a-hover" href="/html/8-templates.html"><i class="fa-sharp fa-solid fa-circle" style="color: #04aa6d; margin: 0 10px"></i>RWD Templates</a>
+            </aside>
+
+            <aside class="aside-derecha">
+                <h1 class="titulo">Diseño web responsivo - Imágenes</h1>
+
+                <hr />
+
+                <div class="patio">
+                    <img src="/img/patio-flores.jpg" alt="Patio con flores" />
+
+                    <p>Cambie el tamaño de la ventana del navegador para ver cómo se adapta la imagen a la página.</p>
+                </div>
+
+                <hr />
+
+                <h2>Uso de la propiedad width</h2>
+
+                <p>Si la propiedad <span class="rojo">width</span> se establece en un porcentaje y la propiedad <span class="rojo">height</span> se establece en "automático", la imagen responderá y se ampliará o reducirá:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">img</span> {
+  <span class="purpura">width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">auto</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image2" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <p>Tenga en cuenta que en el ejemplo anterior, la imagen se puede ampliar para que sea más grande que su tamaño original. En muchos casos, una mejor solución será utilizar la propiedad <span class="rojo">max-width</span> en su lugar.</p>
+
+                <hr />
+
+                <h2>Uso de la propiedad max-width</h2>
+
+                <p>Si la propiedad <span class="rojo">max-width</span> se establece al 100%, la imagen se reducirá si es necesario, pero nunca se ampliará hasta alcanzar un tamaño mayor que su tamaño original:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">img</span> {
+  <span class="purpura">max-width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">auto</span>;
+}                    
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Agregar una imagen a la página web de ejemplo</h2>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">img</span> {
+  <span class="purpura">width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">auto</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image3" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Imágenes de fondo</h2>
+
+                <p>Las imágenes de fondo también pueden responder al cambio de tamaño y escala.</p>
+
+                <p>Aquí mostraremos tres métodos diferentes:</p>
+
+                <p>1. Si la propiedad <span class="rojo">background-size</span> está configurada como "contain", la imagen de fondo se escalará e intentará ajustarse al área de contenido. Sin embargo, la imagen mantendrá su relación de aspecto (la relación proporcional entre el ancho y la altura de la imagen):</p>
+
+                <div class="cont-arboles-flores"></div>
+
+                <p>Aquí está el código CSS:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">div</span> {
+  <span class="purpura">width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">400px</span>;
+  <span class="purpura">background-image</span>: <span class="verde">url('img_flowers.jpg')</span>;
+  <span class="purpura">background-repeat</span>: <span class="verde">no-repeat</span>;
+  <span class="purpura">background-size</span>: <span class="verde">contain</span>;
+  <span class="purpura">border</span>: <span class="verde">1px solid red</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_background1" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <p>2. Si la propiedad <span class="rojo">background-size</span> se establece en "100% 100%", la imagen de fondo se estirará para cubrir toda el área de contenido:</p>
+
+                <div class="cont-arboles-flores1"></div>
+
+                <p>Aquí está el código CSS:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">div</span> {
+  <span class="purpura">width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">400px</span>;
+  <span class="purpura">background-image</span>: <span class="verde">url('img_flowers.jpg')</span>;
+  <span class="purpura">background-size</span>: <span class="verde">100% 100%</span>;
+  <span class="purpura">border</span>: <span class="verde">1px solid red</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_background2" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <p>3. Si la propiedad <span class="rojo">background-size</span> está configurada como "cover", la imagen de fondo se escalará para cubrir toda el área de contenido. Tenga en cuenta que el valor "cover" mantiene la relación de aspecto y es posible que se recorte alguna parte de la imagen de fondo:</p>
+
+                <div class="cont-arboles-flores2"></div>
+
+                <p>Aquí está el código CSS:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span class="rojo">div</span> {
+  <span class="purpura">width</span>: <span class="verde">100%</span>;
+  <span class="purpura">height</span>: <span class="verde">400px</span>;
+  <span class="purpura">background-image</span>: <span class="verde">url('img_flowers.jpg')</span>;
+  <span class="purpura">background-size</span>: <span class="verde">cover</span>;
+  <span class="purpura">border</span>: <span class="verde">1px solid red</span>;
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_background3" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>Diferentes imágenes para diferentes dispositivos</h2>
+
+                <p>Una imagen grande puede ser perfecta en una pantalla de computadora grande, pero inútil en un dispositivo pequeño. ¿Por qué cargar una imagen grande cuando de todas formas tienes que reducir su tamaño? Para reducir la carga, o por cualquier otro motivo, puedes usar consultas de medios para mostrar diferentes imágenes en diferentes dispositivos.</p>
+
+                <p>Aquí hay una imagen grande y una imagen más pequeña que se mostrarán en diferentes dispositivos:</p>
+
+                <div class="cont-arboles-flores3"></div>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+
+                    <div class="fondo-ej">
+                        <pre>
+<span style="color: #999 ;">/* For width smaller than 400px: */</span>
+<span class="rojo">body</span> {
+  <span class="purpura">background-image</span>: <span class="verde">url('img_smallflower.jpg')</span>;
+}
+
+<span style="color: #999 ;">/* For width 400px and larger: */</span>
+<span class="rojo">@media only screen and (min-width: 400px)</span> {
+  <span class="rojo">body</span> {
+    <span class="purpura">background-image</span>: <span class="verde">url('img_flowers.jpg')</span>;
+  }
+}                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_mediaq" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <hr />
+
+                <h2>El elemento HTML &lt;picture&gt;</h2>
+
+                <p>El elemento <span class="rojo">&lt;picture&gt;</span> HTML brinda a los desarrolladores web más flexibilidad para especificar recursos de imágenes.</p>
+
+                <p>El uso más común del elemento <span class="rojo">&lt;picture&gt;</span> será para imágenes utilizadas en diseños adaptables. En lugar de tener una imagen que se amplía o reduce en función del ancho de la ventana gráfica, se pueden diseñar varias imágenes para que llenen mejor la ventana gráfica del navegador.</p>
+
+                <p>El elemento <span class="rojo">&lt;picture&gt;</span> funciona de manera similar a los elementos <span class="rojo">&lt;video&gt;</span> y <span class="rojo">&lt;audio&gt;</span>. Se configuran diferentes fuentes y la primera fuente que se ajusta a las preferencias es la que se utiliza:</p>
+
+                <div class="cuadro-ej">
+                    <h3>Ejemplo</h3>
+                    <div class="fondo-ej">
+                        <pre>
+&lt;<span class="rojo">picture</span>&gt;
+  &lt;<span class="rojo">source</span> <span class="purpura">srcset</span>=<span class="verde">"img_smallflower.jpg"</span> <span class="purpura">media</span>=<span class="verde">"(max-width: 400px)"</span>&gt;
+  &lt;<span class="rojo">source</span> <span class="purpura">srcset</span>=<span class="verde">"img_flowers.jpg"</span>&gt;
+  &lt;<span class="rojo">img</span> <span class="purpura">src</span>=<span class="verde">"img_flowers.jpg"</span> <span class="purpura">alt</span>=<span class="verde">"Flowers"</span>&gt;
+&lt;<span class="rojo">/picture</span>&gt;                            
+                        </pre>
+                    </div>
+                    <a href="https://www.w3schools.com/css/tryit.asp?filename=tryresponsive_image_picture" target="_blank" class="boton-vinculo">Inténtalo tú mismo</a>
+                </div>
+
+                <p>El atributo <span class="rojo">srcset</span> es obligatorio y define la fuente de la imagen.</p>
+
+                <p>El atributo <span class="rojo">media</span> es opcional y acepta las consultas de medios que encontrará en <a class="enlace-normal" href="https://www.w3schools.com/cssref/css3_pr_mediaquery.php" target="_blank"> la regla CSS @media</a></p>
+
+                <p>También debe definir un elemento <span class="rojo">&lt;img&gt;</span> para los navegadores que no admiten <span class="rojo">&lt;picture&gt;</span>.</p>
+
+                <a href="/html/4-mediaQueries.html" class="boton-previous"><i class="fa-solid fa-chevron-left"></i> Anterior</a>
+
+                <a href="/html/6-videos.html" class="boton-next">Próximo <i class="fa-solid fa-chevron-right"></i></a>
+            </aside>
+        </main>
+    </body>
+</html>
