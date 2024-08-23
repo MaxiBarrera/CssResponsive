@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: texto-general;
-    src: url(./fuentes/Poppins-Regular.ttf);
+    src: url(../fuentes/Poppins-Regular.ttf);
 }
 
 :root {
