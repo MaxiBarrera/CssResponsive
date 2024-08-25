@@ -17,7 +17,7 @@
 
 .cont-arboles-flores {
     border: 1px solid red;
-    background-image: url(/img/vereda-arboles.jpg);
+    background-image: url(../img/vereda-arboles.jpg);
     width: 100%;
     height: 400px;
     background-repeat: no-repeat;
@@ -27,7 +27,7 @@
 .cont-arboles-flores1 {
     width: 100%;
     height: 400px;
-    background-image: url(/img/vereda-arboles.jpg);
+    background-image: url(../img/vereda-arboles.jpg);
     border: 1px solid red;
     background-size: 100% 100%;
 }
@@ -35,7 +35,7 @@
 .cont-arboles-flores2 {
     width: 100%;
     height: 400px;
-    background-image: url(/img/vereda-arboles.jpg);
+    background-image: url(../img/vereda-arboles.jpg);
     border: 1px solid red;
     background-size: cover;
 }
@@ -43,7 +43,7 @@
 .cont-arboles-flores3 {
     width: 100%;
     height: 400px;
-    background-image: url(/img/vereda-arboles.jpg);
+    background-image: url(../img/vereda-arboles.jpg);
     background-size: contain;
     background-repeat: no-repeat;
 }
